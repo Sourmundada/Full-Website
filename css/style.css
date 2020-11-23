@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+.header {
+    background: url('../img/background.jpeg') no-repeat center 
+    center/cover;
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    background: red;
+}
+
+.navbar ul li a {
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    background: #fff;
+    color: red;
+}
+
+.showcase{
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.showcase h1, .about-me h1 {
+    font-size: 40px;
+}
+.text {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.showcase span {
+    color: red;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.btn {
+    padding: 9px 17px;
+    color: #fff;
+    background: red;
+    text-decoration: none;
+}
+
+/* About Page */
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: khaki;
+}
+
+.about-me {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.skills img {
+    border: 2px solid red;
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: rgb(255, 255, 22);
+}
+
+.pricing-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.pricing-table {
+    text-align: center;
+    border: 2px dotted rgb(27, 27, 26);
+    padding: 40px;
+    margin: 20px;
+}
+
+#bg-white {
+    background: #fff;
+}
+
+.pricing-table h1, .contact-box h1 {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.contact-box h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    margin-bottom: 20px;
+    background: rgb(163, 163, 61);
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(50, 255, 50);
+}
+
+.contact-box {
+    margin-top: 20px;
+}
+
+.contact-box input, .contact-box textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 18px;
+    font-size: 18px;
+    font-family: 'Comfortaa', sans-serif;
+    outline: none;
+    border: none;
+}
+
+@media (max-width: 500px){
+    .navbar ul li a {
+        font-size: 14px;
+        padding: 15px 8px;
+    }
+    .showcase h1, .about-me h1 {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    .about-me h1 {
+        font-family: 'Comfortaa', sans-serif;
+        line-height: 1.6;
+        font-size: 26px;
+    }
+    .about-me .text {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+    .skills {
+        display: none;
+    }
+    .pricing-section {
+        flex-direction: column;
+    }
+    .pricing-table {
+        padding: 20px;
+    }
+    .contact-box h1, .contact-box input, .contact-box textarea, .contact-box .btn {
+        width: 90%;
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+}
